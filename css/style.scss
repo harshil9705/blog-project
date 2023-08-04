@@ -1,0 +1,79 @@
+@use "fonts.css";
+@use "cdn.jsdelivr.net_npm_remixicon@2.2.0_fonts_remixicon.css";
+@use "base.css";
+
+body{
+    background-color: #f8ecdd;
+}
+
+$primary1 :#f6653b;
+$primary2 :#f8ecdd;
+$primary3 :#23222c;
+$primary4 :#edb15a;
+$primary5 :#37736d;
+$primary6 :#dfd6ed;
+$primary7 :#c5d8e4;
+$primary8 :#ddd7eb;
+$white :#fff;
+$black :#000;
+
+header{
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    background-color: $white;
+    nav{
+      font-size: 18px;  
+      ul{
+          grid-column-gap: 3.6em;
+        li{
+            a{
+                color: $primary3;
+            }
+        }
+      }
+    }
+}
+
+.btn{
+    padding: 10px 25px;
+    background-color: $primary1;
+    border: none;
+    border-radius: 9.6px;
+    border: 1px solid $primary1;
+    transition: all 0.3s;
+    &:hover{
+        background-color: $primary2;
+        border: 1px solid $primary1;
+        a{
+            color: $primary1;
+
+        }
+    }
+    a{
+        font-size: 16px;
+        font-weight: 500;
+        color: $white;
+    }
+}
+
+.banner{
+    background-color: $primary6;
+    padding: 200px 0px 110px 0px;
+    .content{
+        grid-row-gap: 2em;
+        flex-direction: column;
+        align-items: flex-start;
+        display: flex;
+    h1{
+        font-size: 50px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .btn{
+        padding: 10px 30px;
+    }
+    }
+    
+}

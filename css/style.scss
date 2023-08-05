@@ -22,10 +22,11 @@ header{
     width: 100%;
     padding: 20px;
     background-color: $white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     nav{
       font-size: 18px;  
       ul{
-          grid-column-gap: 3.6em;
+          grid-column-gap: 3em;
         li{
             a{
                 color: $primary3;
@@ -59,21 +60,76 @@ header{
 
 .banner{
     background-color: $primary6;
-    padding: 200px 0px 110px 0px;
+    padding: 180px 0px 50px 0px;
     .content{
         grid-row-gap: 2em;
         flex-direction: column;
         align-items: flex-start;
         display: flex;
+        h1{
+            color: $primary3;
+            font-size: 55px;
+        }
+        p{
+            color: $primary3;
+            font-size: 20px;
+        }
+        .btn{
+            padding: 10px 30px;
+        }
+    }
+}
+
+.what{
+    // padding-top: 50px;
     h1{
-        font-size: 50px;
+        font-size: 55px;
+        color: $primary3;
     }
     p{
-        font-size: 20px;
+        color: $primary3;
+        // font-size: 15px;
+        font-weight: 500;
+        line-height: 25px;
     }
-    .btn{
-        padding: 10px 30px;
+}
+
+.blogging{
+    background-color: $primary3;
+    h1{
+        font-size: 55px;
+        margin-bottom: 30px;
+        color: $white;
     }
+    p{
+        color: $white;
+        font-weight: 500;
+        line-height: 25px;
     }
-    
+}
+
+.why{
+    background-color: $primary7;
+    h1{
+        font-size: 50px;
+        color: $primary3;
+        margin-bottom: 30px;
+    }
+    p{
+        color: $primary3;
+        font-weight: 500;
+        line-height: 25px;
+    }
+}
+
+.platform{
+    background-color: $primary5;
+    h1{
+        span{
+            font-family: 'Blanka';
+            font-weight: 100;
+            color: $primary4;
+        }
+        color: $white;
+    }
 }

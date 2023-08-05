@@ -145,6 +145,13 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Blanka";
+  src: url("../fonts/Blanka-Regular.woff2") format("woff2"), url("../fonts/-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 /*
 * Remix Icon v2.2.0
 * https://remixicon.com
@@ -8153,6 +8160,10 @@
   margin: auto;
 }
 
+body {
+  font-family: "Lexend Deca";
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -8246,6 +8257,10 @@ ul, ol {
   font-family: "Lexend Deca";
 }
 
+.padding-50 {
+  padding: 50px 0px;
+}
+
 body {
   background-color: #f8ecdd;
 }
@@ -8255,12 +8270,13 @@ header {
   width: 100%;
   padding: 20px;
   background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 header nav {
   font-size: 18px;
 }
 header nav ul {
-  grid-column-gap: 3.6em;
+  grid-column-gap: 3em;
 }
 header nav ul li a {
   color: #23222c;
@@ -8289,7 +8305,7 @@ header nav ul li a {
 
 .banner {
   background-color: #dfd6ed;
-  padding: 200px 0px 110px 0px;
+  padding: 180px 0px 50px 0px;
 }
 .banner .content {
   grid-row-gap: 2em;
@@ -8298,13 +8314,65 @@ header nav ul li a {
   display: flex;
 }
 .banner .content h1 {
-  font-size: 50px;
+  color: #23222c;
+  font-size: 55px;
 }
 .banner .content p {
+  color: #23222c;
   font-size: 20px;
 }
 .banner .content .btn {
   padding: 10px 30px;
+}
+
+.what h1 {
+  font-size: 55px;
+  color: #23222c;
+}
+.what p {
+  color: #23222c;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.blogging {
+  background-color: #23222c;
+}
+.blogging h1 {
+  font-size: 55px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+.blogging p {
+  color: #fff;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.why {
+  background-color: #c5d8e4;
+}
+.why h1 {
+  font-size: 50px;
+  color: #23222c;
+  margin-bottom: 30px;
+}
+.why p {
+  color: #23222c;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.platform {
+  background-color: #37736d;
+}
+.platform h1 {
+  color: #fff;
+}
+.platform h1 span {
+  font-family: "Blanka";
+  font-weight: 100;
+  color: #edb15a;
 }
 
 /*# sourceMappingURL=style.css.map */

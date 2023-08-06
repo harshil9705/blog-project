@@ -8269,6 +8269,7 @@ header {
   position: fixed;
   width: 100%;
   padding: 20px;
+  z-index: 11111;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
@@ -8367,12 +8368,106 @@ header nav ul li a {
   background-color: #37736d;
 }
 .platform h1 {
+  margin-bottom: 30px;
   color: #fff;
 }
 .platform h1 span {
   font-family: "Blanka";
   font-weight: 100;
   color: #edb15a;
+}
+.platform p {
+  color: #fff;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.sign-up .back {
+  height: 100vh;
+  display: flex;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  background-image: url(../image/tortuous-path-background.svg);
+  background-repeat: no-repeat;
+  position: relative;
+}
+.sign-up .form {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 20px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  height: 600px;
+  max-width: 488px;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 24px 62px;
+}
+.sign-up .form h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #23222c;
+  text-align: center;
+  margin: 24px 0px 20px;
+}
+.sign-up .form .divider {
+  width: 100%;
+  border-bottom: solid 1px #A3A2A8;
+  height: 10px;
+  margin: 26px 0 24px;
+}
+.sign-up .form .divider p {
+  width: fit-content;
+  text-align: center;
+  margin: 18px auto 0;
+  padding: 0 12px;
+  background-color: white;
+  line-height: 20px;
+}
+.sign-up .form form .fgroup {
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 16px;
+}
+.sign-up .form form .fgroup label {
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+.sign-up .form form .fgroup input {
+  padding: 22px 16px 18px;
+  border: none;
+  background-color: #F2F2F7;
+  border-radius: 10px;
+}
+.sign-up .form form .fgroup input::placeholder {
+  font-size: 16px;
+}
+.sign-up .form form .btn {
+  background-color: #23222c;
+  border-color: #23222c;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  width: 135px;
+  margin: 18px auto;
+  padding: 10px 25px;
+}
+.sign-up .form p {
+  text-align: center;
+  font-size: 14px;
+}
+.sign-up .form p a {
+  font-weight: bold;
+  color: #23222c;
 }
 
 /*# sourceMappingURL=style.css.map */

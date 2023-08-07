@@ -8261,10 +8261,6 @@ ul, ol {
   padding: 50px 0px;
 }
 
-body {
-  background-color: #f8ecdd;
-}
-
 header {
   position: fixed;
   width: 100%;
@@ -8289,7 +8285,7 @@ header nav ul li a {
   border: none;
   border-radius: 9.6px;
   border: 1px solid #f6653b;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 .btn:hover {
   background-color: #f8ecdd;
@@ -8326,6 +8322,9 @@ header nav ul li a {
   padding: 10px 30px;
 }
 
+.what {
+  background-color: #f8ecdd;
+}
 .what h1 {
   font-size: 55px;
   color: #23222c;
@@ -8445,9 +8444,15 @@ header nav ul li a {
   border: none;
   background-color: #F2F2F7;
   border-radius: 10px;
+  font-family: "Lexend Deca";
 }
 .sign-up .form form .fgroup input::placeholder {
   font-size: 16px;
+}
+.sign-up .form form .fgroup .error {
+  margin: 5px 0px 0px 5px;
+  color: red;
+  font-size: 12px;
 }
 .sign-up .form form .btn {
   background-color: #23222c;
@@ -8468,6 +8473,59 @@ header nav ul li a {
 .sign-up .form p a {
   font-weight: bold;
   color: #23222c;
+}
+
+.addblog .artical {
+  padding: 20px;
+}
+.addblog .artical form {
+  text-align: center;
+  padding-top: 100px;
+}
+.addblog .artical form input {
+  width: 80%;
+  padding: 22px 16px 18px;
+  border: none;
+  background-color: #F2F2F7;
+  border-radius: 10px;
+  margin: 10px 0px;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+}
+.addblog .artical form input::placeholder {
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  color: rgba(35, 34, 44, 0.5803921569);
+}
+.addblog .artical form .description {
+  border: none;
+  font-size: 14px;
+  background-color: #F2F2F7;
+  border-radius: 10px;
+  margin: 10px 0px;
+  height: 500px;
+  font-family: "Lexend Deca";
+  width: 80%;
+  padding: 22px 16px 18px;
+}
+.addblog .artical form .description::placeholder {
+  color: rgba(35, 34, 44, 0.5803921569);
+  font-size: 16px;
+}
+.addblog .artical form .btn {
+  padding: 15px 25px;
+  font-size: 16px;
+  color: #fff;
+  font-family: "Lexend Deca";
+  transition: all 0.3s;
+  border: 1px solid #f6653b;
+}
+.addblog .artical form .btn:hover {
+  border: 1px solid #f6653b;
+  font-weight: 500;
+}
+.addblog .artical form .btn:hover a {
+  color: #f6653b;
 }
 
 /*# sourceMappingURL=style.css.map */

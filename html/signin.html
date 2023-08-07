@@ -25,17 +25,19 @@
                 <div class="divider">
                     <p>Create your knowing account</p>
                 </div>
-                <form action="">
+                <form action="addblog.html" id="form">
                     <div class="row fgroup">
                         <label for="" >Username</label>
-                        <input type="text" class="lexend" placeholder="Username">
+                        <input type="text" class="lexend" id="username" placeholder="Username" required>
+                        <span id="uerror" class="error"></span>
                     </div>
                     <div class="row fgroup">
                         <label for="" >Password</label>
-                        <input type="text" class="lexend" placeholder="Password">
+                        <input type="password" class="lexend" id="password" placeholder="Password" required>
+                        <span id="perror" class="error"></span>
                     </div>
                     <div>
-                        <button class="btn lexend">Sign in</button>
+                        <button value="submit" class="btn lexend">Sign in</button>
                     </div>
                 </form>
                 <p>Don't have an account ? <a href="signup.html">Sign up</a></p>
@@ -43,6 +45,34 @@
             </div>
         </div>
     </section>
-
 </body>
+    <!-- <script>
+        document.querySelector("#form").addEventListener("submit",(e)=>{
+        e.preventDefault()
+
+        let updata= {
+            username:document.querySelector("#username").value,
+            password:document.querySelector("#password").value,
+        }
+
+        console.log(updata);
+
+        let userwall = /^(?=.*[a-zA-Z])(?=.*[0-9])[a-zA-Z0-9]+$/;
+        let passwall = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$/;
+
+        if(updata.username.test(userwall)){
+            document.querySelector("#uerror").innerHTML=""
+        }
+        else{
+            document.querySelector("#uerror").innerHTML="username is not invalid"
+        }
+
+        if(updata.email.length.test(passwall)){
+            document.querySelector('#eerror').innerHTML=""
+        }
+        else{
+            document.querySelector('#eerror').innerHTML="invalid Password"
+        }
+    })
+    </script> -->
 </html>

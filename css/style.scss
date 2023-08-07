@@ -2,10 +2,6 @@
 @use "cdn.jsdelivr.net_npm_remixicon@2.2.0_fonts_remixicon.css";
 @use "base.css";
 
-body{
-    background-color: #f8ecdd;
-}
-
 $primary1 :#f6653b;
 $primary2 :#f8ecdd;
 $primary3 :#23222c;
@@ -43,7 +39,7 @@ header{
     border: none;
     border-radius: 9.6px;
     border: 1px solid $primary1;
-    transition: all 0.3s;
+    transition: all 0.5s;
     &:hover{
         background-color: $primary2;
         border: 1px solid $primary1;
@@ -83,6 +79,7 @@ header{
 
 .what{
     // padding-top: 50px;
+    background-color: $primary2;
     h1{
         font-size: 55px;
         color: $primary3;
@@ -140,6 +137,8 @@ header{
         line-height: 25px;
     }
 }
+
+// form css
 
 .sign-up{
     .back{
@@ -206,10 +205,15 @@ header{
                     border: none;
                     background-color: #F2F2F7;
                     border-radius: 10px;
-                    // font-family: 'Lexend Deca';
+                    font-family: 'Lexend Deca';
                     &::placeholder{
                         font-size: 16px;
                     }
+                }
+                .error{
+                    margin: 5px 0px 0px 5px;
+                    color: red;
+                    font-size: 12px;
                 }
             }
             .btn{
@@ -232,6 +236,65 @@ header{
             a{
                 font-weight: bold;
                 color: $primary3;
+            }
+        }
+    }
+}
+
+// addblog css
+
+.addblog{
+    .artical{
+        padding: 20px;
+        form{
+            text-align: center;
+            padding-top:100px;
+            input{
+                width: 80%;
+                padding: 22px 16px 18px;
+                border: none;
+                background-color: #F2F2F7;
+                border-radius: 10px;
+                margin: 10px 0px;
+                font-family: 'Lexend Deca';
+                font-size: 16px;
+                &::placeholder{
+                    font-family: 'Lexend Deca';
+                    font-size: 16px;
+                    color: #23222c94;
+                }
+            }
+            .description{
+                border: none;
+                font-size: 14px;
+                background-color: #F2F2F7;
+                border-radius: 10px;
+                margin: 10px 0px;
+                height: 500px;
+                font-family: 'Lexend Deca';
+                width: 80%;
+                padding: 22px 16px 18px;
+                &::placeholder{
+                    color: #23222c94;
+                    font-size: 16px;
+
+                }
+            }
+            .btn{
+                padding: 15px 25px;
+                font-size: 16px;
+                color: $white;
+                font-family: 'Lexend Deca';
+                transition: all 0.3s;
+                border: 1px solid $primary1;
+                &:hover{
+                    border: 1px solid $primary1;
+                    font-weight: 500;
+                    a{
+                        color: $primary1;
+                        
+                    }
+                }
             }
         }
     }

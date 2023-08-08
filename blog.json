@@ -1,11 +1,25 @@
 {
-  "signin": [
+  "signup": [
     {
-      "username": "bhavinbhai patel",
-      "password": "dqsdsddas",
+      "username": "ha2343",
+      "email": "harshillakhani009@gmail.com",
+      "password": "dfgdf@424",
       "id": 1
+    },
+    {
+      "username": "ha2343",
+      "email": "harshillakhani009@gmail.com",
+      "password": "3432423@fdsfdsdsf",
+      "id": 2
     }
   ],
-  "signup": [],
-  "blog": []
+  "blog": [
+    {
+      "title": "jijjijij",
+      "category": "man",
+      "img": "https://itknowledgeexchange.techtarget.com/coffee-talk/files/2020/11/find-github-url.png",
+      "description": "kjijuhuuytfotgo8iyrfo7u5de75uorf9",
+      "id": 1
+    }
+  ]
 }

@@ -25,20 +25,20 @@
                 <div class="divider">
                     <p>Create your knowing account</p>
                 </div>
-                <form action="addblog.html" id="form">
+                <form class="lexend" id="upform">
                     <div class="row fgroup">
-                        <label for="" >Username</label>
-                        <input type="text" class="lexend" id="username" placeholder="Username" required>
+                        <label>Username</label>
+                        <input type="text" id="username" placeholder="Username" required>
                         <span id="uerror" class="error"></span>
                     </div>
                     <div class="row fgroup">
-                        <label for="" >Email</label>
-                        <input type="email" class="lexend" id="email" placeholder="Email" required>
+                        <label>Email</label>
+                        <input type="email" id="email" placeholder="Email" required>
                         <span id="eerror" class="error"></span>
                     </div>
                     <div class="row fgroup">
-                        <label for="" >Set Password</label>
-                        <input type="password" class="lexend" id="password" placeholder="Password" required>
+                        <label>Set Password</label>
+                        <input type="password" id="password" placeholder="Password" required>
                         <span id="perror" class="error"></span>
                     </div>
                     <div>
@@ -51,42 +51,6 @@
     </section>
 
 </body>
-<!-- <script>
-    document.querySelector("#form").addEventListener("submit",(e)=>{
-        e.preventDefault()
-
-        let updata= {
-            username:document.querySelector("#username").value,
-            email:document.querySelector("#email").value,
-            password:document.querySelector("#password").value,
-        }
-
-        console.log(updata);
-
-        let userwall = /^(?=.*[a-zA-Z])(?=.*[0-9])[a-zA-Z0-9]+$/;
-        let emailwall = /^[a-zA-Z0-9]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-        let passwall = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$/;
-
-        if(updata.username.test(userwall)){
-            document.querySelector("#uerror").innerHTML=""
-        }
-        else{
-            document.querySelector("#uerror").innerHTML="username is not invalid"
-        }
-
-        if(updata.email.length.test(emailwall)){
-            document.querySelector('#eerror').innerHTML=""
-        }
-        else{
-            document.querySelector('#eerror').innerHTML="invalid Email Address"
-        }
-
-        if(updata.email.length.test(passwall)){
-            document.querySelector('#eerror').innerHTML=""
-        }
-        else{
-            document.querySelector('#eerror').innerHTML="invalid Password"
-        }
-    })
-</script> -->
+<script src="../javascript/index.js"></script>
+<!-- <script src="../javascript/signup.js"></script> -->
 </html>

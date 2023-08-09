@@ -3,22 +3,28 @@
     {
       "username": "ha2343",
       "email": "harshillakhani009@gmail.com",
-      "password": "dfgdf@424",
+      "password": "sdds@3322",
       "id": 1
     },
     {
       "username": "ha2343",
       "email": "harshillakhani009@gmail.com",
-      "password": "3432423@fdsfdsdsf",
+      "password": "sdssd@121",
       "id": 2
+    },
+    {
+      "username": "ha2343",
+      "email": "jaypipaliya32@gmail.com",
+      "password": "sasa@@3232121",
+      "id": 3
     }
   ],
   "blog": [
     {
-      "title": "jijjijij",
-      "category": "man",
-      "img": "https://itknowledgeexchange.techtarget.com/coffee-talk/files/2020/11/find-github-url.png",
-      "description": "kjijuhuuytfotgo8iyrfo7u5de75uorf9",
+      "title": "Employee (dis)engagement - what does the data say?",
+      "category": "by Pando",
+      "img": "https://assets.website-files.com/6231c31a6f6b11d3790a8978/64569c5e171645daaae736dc_BlogCover_DesigningEquity.jpg",
+      "description": "The shift to remote and hybrid work requires a new way of supporting equitable practices and culture.",
       "id": 1
     }
   ]

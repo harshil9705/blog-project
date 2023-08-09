@@ -150,6 +150,7 @@ header{
         filter: blur(1px);
         -webkit-filter: blur(1px);
         background-image: url(../image/tortuous-path-background.svg);
+        // background-image: url(../image/tortuous-path-background.svg);
         background-repeat:no-repeat;
         position: relative;
     }
@@ -299,3 +300,46 @@ header{
         }
     }
 }
+
+// blog
+
+#ui{
+        
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+    padding-top: 100px;
+    max-width: 1140px;
+    padding: 100px 10px 10px;
+    margin: auto;
+    div{
+        position: relative;
+        box-shadow: rgb(35, 34, 44,0.24) 0px 3px 8px;
+        padding: 15px;
+        border-radius: 10px;
+        img{
+            border-radius: 10px;
+            width: 100%;
+            max-height: 400px;
+        }
+        h2{
+            color: $primary3;
+            font-size: 30px;
+            margin: 10px 0px;
+        }
+        h3{
+            margin-top: 15px;
+            font-size: 20px;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.509);
+            
+        }
+        p{
+            color: $primary3;
+            font-size: 16px;
+            font-weight: 300;
+            // text-align: center;
+        }
+    }
+}
+

@@ -8528,4 +8528,41 @@ header nav ul li a {
   color: #f6653b;
 }
 
+#ui {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding-top: 100px;
+  max-width: 1140px;
+  padding: 100px 10px 10px;
+  margin: auto;
+}
+#ui div {
+  position: relative;
+  box-shadow: rgba(35, 34, 44, 0.24) 0px 3px 8px;
+  padding: 15px;
+  border-radius: 10px;
+}
+#ui div img {
+  border-radius: 10px;
+  width: 100%;
+  max-height: 400px;
+}
+#ui div h2 {
+  color: #23222c;
+  font-size: 30px;
+  margin: 10px 0px;
+}
+#ui div h3 {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.509);
+}
+#ui div p {
+  color: #23222c;
+  font-size: 16px;
+  font-weight: 300;
+}
+
 /*# sourceMappingURL=style.css.map */

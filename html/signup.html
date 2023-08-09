@@ -25,32 +25,34 @@
                 <div class="divider">
                     <p>Create your knowing account</p>
                 </div>
-                <form class="lexend" id="upform">
-                    <div class="row fgroup">
-                        <label>Username</label>
-                        <input type="text" id="username" placeholder="Username" required>
-                        <span id="uerror" class="error"></span>
-                    </div>
-                    <div class="row fgroup">
-                        <label>Email</label>
-                        <input type="email" id="email" placeholder="Email" required>
-                        <span id="eerror" class="error"></span>
-                    </div>
-                    <div class="row fgroup">
-                        <label>Set Password</label>
-                        <input type="password" id="password" placeholder="Password" required>
-                        <span id="perror" class="error"></span>
-                    </div>
-                    <div>
-                        <button class="btn lexend" value="submit">Sign up</button>
-                    </div>
-                </form>
+                <span id="ferror" class="error"></span>
+                    <form class="lexend"  id="upform">
+                        <form action="./index.html">
+                            <div class="row fgroup">
+                                <label>Username</label>
+                                <input type="text" id="username" placeholder="Username" required>
+                                <span id="uerror" class="error"></span>
+                            </div>
+                            <div class="row fgroup">
+                                <label>Email</label>
+                                <input type="email" id="email" placeholder="Email" required>
+                                <span id="eerror" class="error"></span>
+                            </div>
+                            <div class="row fgroup">
+                                <label>Set Password</label>
+                                <input type="password" id="password" placeholder="Password" required>
+                                <span id="perror" class="error"></span>
+                            </div>
+                            <div>
+                                <button class="btn lexend" value="submit">Sign up</button>
+                            </div>
+                        </form>
+                    </form>
                 <p>Already have an account ? <a href="signin.html">Sign in</a></p>
             </div>
         </div>
     </section>
 
 </body>
-<script src="../javascript/index.js"></script>
-<!-- <script src="../javascript/signup.js"></script> -->
+<script src="../javascript/signup.js"></script>
 </html>

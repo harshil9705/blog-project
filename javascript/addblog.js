@@ -20,6 +20,48 @@ let output = (blog) => {
     })
 }
 
+
+
+let fill =() =>{
+    let value = document.querySelector("#value").value
+    fetch(`http://localhost:3100/blog?category=${value}`)
+    .then((ser)=>ser.json())
+    .then((data)=>{
+            data.filter((elements)=>{
+                if(elements.category.match(value.toLowerCase())){
+                    output(data)
+                }
+                else{
+                    alert("no")
+                }
+            })
+    })
+}
+document.querySelector("#search").addEventListener("click",fill)
+
+document.querySelector("#value").addEventListener("input", (e) =>{
+        fill()  
+})
+
+// document.querySelector("#search").addEventListener("click",()=>{
+//     console.log("www");
+//     let value = document.querySelector("#value").value
+//     fetch(`http://localhost:3100/blog?category=${value}`)
+//     .then((ser)=>ser.json())
+//     .then((data)=>{
+//         if(data.length > 0){
+//             for(let i = 0; i<data.length; i++){
+//                 if(data[i].category == value){
+//                     output(data)
+//                 }
+//             }
+//         }
+//         else{
+//             alert("no")
+//         }
+//     })
+// })
+
 // get data
 
 fetch("http://localhost:3100/blog")
@@ -49,4 +91,19 @@ document.querySelector("#addblog").addEventListener("submit",(e)=>{
     
 })
 
+// document.querySelector("#search").addEventListener("click",()=>{
+//     let value = document.querySelector("#value").value
+//     fetch(`http://localhost:3100/blog?category=${value}`)
+//     .then((ser)=>ser.json())
+//     .then((data)=>{
+//         data.filter((elements)=>{
+//             if(elements.category.toLowercase().includes(value.toLowercase())){
+//                 output(data)
+//             }
+//             else{
+
+//             }
+//         })
+//     })
+// })
 

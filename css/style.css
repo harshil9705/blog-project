@@ -8261,6 +8261,13 @@ ul, ol {
   padding: 50px 0px;
 }
 
+.mainerror {
+  margin: 5px 0px;
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -8276,7 +8283,11 @@ header nav ul {
   grid-column-gap: 3em;
 }
 header nav ul li a {
+  transition: all 0.5s;
   color: #23222c;
+}
+header nav ul li:hover a {
+  color: #f6653b;
 }
 
 .btn {
@@ -8382,7 +8393,6 @@ header nav ul li a {
 }
 
 .sign-up .back {
-  height: 100vh;
   display: flex;
   height: 100vh;
   background-size: cover;
@@ -8402,8 +8412,8 @@ header nav ul li a {
   right: 0;
   margin: auto;
   position: absolute;
-  height: 600px;
-  max-width: 488px;
+  height: 37.5rem;
+  max-width: 28.125rem;
   background-color: white;
   align-items: center;
   justify-content: center;
@@ -8449,7 +8459,7 @@ header nav ul li a {
 .sign-up .form form .fgroup input::placeholder {
   font-size: 16px;
 }
-.sign-up .form form .fgroup .error {
+.sign-up .form form .error {
   margin: 5px 0px 0px 5px;
   color: red;
   font-size: 12px;
@@ -8528,13 +8538,44 @@ header nav ul li a {
   color: #f6653b;
 }
 
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0px 10px;
+  background-color: #f8ecdd;
+}
+.search input {
+  padding: 9px;
+  border: none;
+  background-color: #F2F2F7;
+  border-radius: 10px 0px 0px 10px;
+  border: 1px solid #f6653b;
+  font-family: "Lexend Deca";
+  width: 20%;
+}
+.search input::placeholder {
+  font-size: 16px;
+}
+.search button {
+  width: 10%;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  padding: 7px 25px;
+  border-radius: 0px 10px 10px 0px;
+}
+.search button:hover {
+  color: #fff;
+  background-color: #f6653b;
+}
+
 #ui {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
-  padding-top: 100px;
   max-width: 1140px;
-  padding: 100px 10px 10px;
+  padding: 10px 10px;
   margin: auto;
 }
 #ui div {

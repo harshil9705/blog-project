@@ -22,11 +22,13 @@ document.querySelector("#upform").addEventListener("submit",(e)=>{
     }
     if(passval.test(password)){
         document.querySelector("#perror").innerHTML=""
-        window.location.href="index.html"
     }else{
         document.querySelector("#perror").innerHTML="Enter minimum 8 latter "
     }
     
+    if(userval.test(username) && emailval.test(email) && passval.test(password)){
+        window.location.href="index.html"
+    }
     
     updata={
         username : document.querySelector("#username").value,
@@ -44,5 +46,9 @@ document.querySelector("#upform").addEventListener("submit",(e)=>{
     .then((res) => res.json())
     .then((data) => console.log(data));
 
-    
+    // fetch(`http://localhost:3100/signup?email=${email}`)
+    // .then((ele)=>ele.json())
+    // .then((mix)=>{
+    //     if()
+    // })
 })  

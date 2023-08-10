@@ -1,31 +1,46 @@
 {
   "signup": [
     {
-      "username": "ha2343",
-      "email": "harshillakhani009@gmail.com",
-      "password": "sdds@3322",
+      "username": "harshil321",
+      "email": "harshil3322@gmail.com",
+      "password": "har@12345678",
       "id": 1
     },
     {
-      "username": "ha2343",
-      "email": "harshillakhani009@gmail.com",
-      "password": "sdssd@121",
+      "username": "jay987",
+      "email": "jay4545@gmail.com",
+      "password": "jay4040#",
       "id": 2
-    },
-    {
-      "username": "ha2343",
-      "email": "jaypipaliya32@gmail.com",
-      "password": "sasa@@3232121",
-      "id": 3
     }
   ],
   "blog": [
     {
-      "title": "Employee (dis)engagement - what does the data say?",
-      "category": "by Pando",
-      "img": "https://assets.website-files.com/6231c31a6f6b11d3790a8978/64569c5e171645daaae736dc_BlogCover_DesigningEquity.jpg",
-      "description": "The shift to remote and hybrid work requires a new way of supporting equitable practices and culture.",
+      "title": "How to start a t-shirt business online",
+      "category": "e commerce",
+      "img": "https://static.wixstatic.com/media/a77aa0_ac43dfc5fbaa400d93084b43c9f7229a~mv2.jpg/v1/fill/w_626,h_358,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a77aa0_ac43dfc5fbaa400d93084b43c9f7229a~mv2.jpg",
+      "description": "There's nothing quite like a good t-shirt. Apart from being easy to throw on, t-shirts have a unique way of expressing our individuality, our humor, and our loyalties. ",
       "id": 1
+    },
+    {
+      "title": "How to Calculate Sales Tax for Your Online Store",
+      "category": "e commerce",
+      "img": "https://static.wixstatic.com/media/dd7a8b_f9af0a7cb5a54b7d8d19ce6f4ec42aa0~mv2.png/v1/fill/w_364,h_205,fp_0.50_0.50,q_95,enc_auto/dd7a8b_f9af0a7cb5a54b7d8d19ce6f4ec42aa0~mv2.png",
+      "description": "Some aspects of your pricing strategy, like wholesale costs, are easier to understand and identify. Other factors, like how to find the sales tax, can be a bit more stressful and complicated, especially for online businesses with a global reach. That’s because when calculating sales tax for your online store, there is rarely a one-size-fits-all-approach. Instead, you have to navigate city, county, state, and country regulations to understand your tax obligations. ",
+      "id": 2
+    },
+    {
+      "title": "How to Become a Professional Photographer ",
+      "category": "photography",
+      "img": "https://static.wixstatic.com/media/4a5235_80822176f8ef466b84e260f1db5fee72~mv2.png/v1/fill/w_740,h_445,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4a5235_80822176f8ef466b84e260f1db5fee72~mv2.png",
+      "description": "Define your purpose \n\nMaster your skills\n\nTake some classes\n\nPractice non-stop\n\nExplore all possibilities\n\nFind your niche\n\nGet the right gear\n\nDedicate time to editing\n\nDevelop a personal style\n\nBuild a solid portfolio\n\nCreate a professional photography website\n\nBrush up on your networking skills\n\nNail your marketing strategy\n\nPut together a business plan\n\nInvest in your growth",
+      "id": 3
+    },
+    {
+      "title": "Our Top Rookies for the Upcoming Season",
+      "category": "sports",
+      "img": "https://static.wixstatic.com/media/c22c23_2b30616ff13e440399065674ee385e7d~mv2.jpg/v1/fill/w_740,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/c22c23_2b30616ff13e440399065674ee385e7d~mv2.jpg",
+      "description": "\nWelcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more. ",
+      "id": 4
     }
   ]
 }

@@ -24,9 +24,15 @@ header{
       font-size: 18px;  
       ul{
           grid-column-gap: 3em;
-        li{
-            a{
+          li{
+              a{
+                transition: all 0.5s;
                 color: $primary3;
+            }
+            &:hover{
+                a{
+                    color: $primary1;
+                }
             }
         }
       }
@@ -142,7 +148,6 @@ header{
 
 .sign-up{
     .back{
-        height: 100vh;
         display: flex;
         height: 100vh;
         background-size: cover;
@@ -164,8 +169,8 @@ header{
         margin: auto;
         position: absolute;
         // background-color: rgba(255, 255, 255, 0.638);
-        height: 600px;
-        max-width: 488px;
+        height: 37.5rem;
+        max-width: 28.125rem;
         background-color: white;
         align-items: center;
         justify-content: center;
@@ -211,11 +216,11 @@ header{
                         font-size: 16px;
                     }
                 }
-                .error{
-                    margin: 5px 0px 0px 5px;
-                    color: red;
-                    font-size: 12px;
-                }
+            }
+            .error{
+                margin: 5px 0px 0px 5px;
+                color: red;
+                font-size: 12px;
             }
             .btn{
                 background-color: $primary3;
@@ -241,6 +246,8 @@ header{
         }
     }
 }
+
+
 
 // addblog css
 
@@ -303,14 +310,44 @@ header{
 
 // blog
 
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px 10px;
+    background-color: $primary2;
+    input{
+        padding: 9px;
+        border: none;
+        background-color: #F2F2F7;
+        border-radius: 10px 0px 0px 10px;
+        border: 1px solid $primary1;
+        font-family: 'Lexend Deca';
+        &::placeholder{
+            font-size: 16px;
+        }
+        width: 20%;
+    }
+    button{
+        width: 10%;
+        font-size: 16px;
+        color: $white;
+        font-weight: 500;
+        padding: 7px 25px;
+        border-radius: 0px 10px 10px 0px;
+        &:hover{
+           color: $white;
+           background-color: $primary1;
+        }
+    }
+}
+
 #ui{
-        
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 15px;
-    padding-top: 100px;
     max-width: 1140px;
-    padding: 100px 10px 10px;
+    padding:  10px 10px;
     margin: auto;
     div{
         position: relative;

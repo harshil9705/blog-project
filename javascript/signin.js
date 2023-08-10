@@ -23,19 +23,31 @@ document.querySelector("#inform").addEventListener("submit",(e)=>{
         email:email,
         password:password
     }
-    get(indata)
-})
-
-let get = async(data)=> {
-
+    
     fetch(`http://localhost:3100/signup?email=${email}`)
-    .then((res)=>{
-        if(res.length > 0){
-            res.filter((filter)=>filter.email == data)
-            window.location.href="index.html"
+    .then((ser)=>ser.json())
+    .then((data)=>{
+        if(data.length > 0){
+            for(let i = 0; i<data.length; i++){
+                if(data[i].email == email && data[i].password == password){
+                    window.location.href="index.html"
+                }
+                else{
+                    document.querySelector("#ferror").innerHTML="* Please confirm your Email or password so you can log in...";
+                }
+            }
         }
         else{
-            alert("don't metch")
+            document.querySelector("#ferror").innerHTML="Enter your ditails"
         }
     })
+
+})
+
+let get = async()=> {
+
+    fetch(`http://localhost:3100/signup`)
+    .then((res)=>res.json())
+    .then((datas)=>console.log())
 }
+get()

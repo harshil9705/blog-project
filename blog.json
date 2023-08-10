@@ -41,6 +41,13 @@
       "img": "https://static.wixstatic.com/media/c22c23_2b30616ff13e440399065674ee385e7d~mv2.jpg/v1/fill/w_740,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/c22c23_2b30616ff13e440399065674ee385e7d~mv2.jpg",
       "description": "\nWelcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more. ",
       "id": 4
+    },
+    {
+      "title": "Difference Between NSE and BSE – How to Choose an Exchange for Your Trades",
+      "category": "news",
+      "img": "https://www.tickertape.in/blog/wp-content/uploads/2020/08/BSE-vs-NSE-370x245.jpg",
+      "description": "Short for National Stock Exchange, NSE is the largest stock exchange in India on the basis of market capitalisation. NSE was founded in 1992, and it brought with it the electronic mode of trading in stocks. Headquartered in Mumbai, NSE uses the Nifty 50 index as its benchmark, which comprises the top 50 stocks of the share market across different sectors.",
+      "id": 5
     }
   ]
 }

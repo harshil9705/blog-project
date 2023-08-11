@@ -4,13 +4,16 @@ let output = (blog) => {
         let img = document.createElement("img")
         img.src=ele.img
         img.setAttribute("class","img")
+
         let title = document.createElement("h2")
         title.innerHTML=ele.title
+
         let category = document.createElement("h3")
         category.innerHTML=`Category : ${ele.category}`
+
         let description = document.createElement("p")
         description.innerHTML=ele.description
-        
+        description.setAttribute("id","pera")
         let div = document.createElement("div")
         div.append(img,category,title,description)
         
@@ -18,6 +21,8 @@ let output = (blog) => {
 
     })
 }
+
+
 
 // get data
 
@@ -47,44 +52,3 @@ document.querySelector("#addblog").addEventListener("submit",(e)=>{
     console.log(blog);
     
 })
-
-// document.querySelector("#search").addEventListener("click",()=>{
-//     let value = document.querySelector("#value").value
-//     fetch(`http://localhost:3100/blog?category=${value}`)
-//     .then((ser)=>ser.json())
-//     .then((data)=>{
-//         data.filter((elements)=>{
-//             if(elements.category.toLowercase().includes(value.toLowercase())){
-//                 output(data)
-//             }
-//             else{
-
-//             }
-//         })
-//     })
-// })
-
-
-
-
-
-
-
-// document.querySelector("#search").addEventListener("click",()=>{
-//     console.log("www");
-//     let value = document.querySelector("#value").value
-//     fetch(`http://localhost:3100/blog?category=${value}`)
-//     .then((ser)=>ser.json())
-//     .then((data)=>{
-//         if(data.length > 0){
-//             for(let i = 0; i<data.length; i++){
-//                 if(data[i].category == value){
-//                     output(data)
-//                 }
-//             }
-//         }
-//         else{
-//             alert("no")
-//         }
-//     })
-// })

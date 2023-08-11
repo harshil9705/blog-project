@@ -8538,15 +8538,15 @@ header nav ul li:hover a {
   color: #f6653b;
 }
 
-.search {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 100px 0px 10px;
-  background-color: #f8ecdd;
+.option {
+  background-color: #23222c;
 }
-.search input {
-  padding: 9px;
+.option .search {
+  padding: 100px 20px 10px;
+  width: 100%;
+}
+.option .search input {
+  padding: 9px 9px 9px 15px;
   border: none;
   background-color: #F2F2F7;
   border-radius: 10px 0px 0px 10px;
@@ -8554,10 +8554,10 @@ header nav ul li:hover a {
   font-family: "Lexend Deca";
   width: 20%;
 }
-.search input::placeholder {
+.option .search input::placeholder {
   font-size: 16px;
 }
-.search button {
+.option .search button {
   width: 10%;
   font-size: 16px;
   color: #fff;
@@ -8565,8 +8565,21 @@ header nav ul li:hover a {
   padding: 7px 25px;
   border-radius: 0px 10px 10px 0px;
 }
-.search button:hover {
+.option .search button:hover {
   color: #fff;
+  background-color: #f6653b;
+}
+.option .search select {
+  border: 1px solid #f6653b;
+  padding: 10px 20px;
+  margin-left: 600px;
+  color: #23222c;
+  border-radius: 10px;
+}
+.option .search select option {
+  padding: 10px;
+}
+.option .search select option:hover {
   background-color: #f6653b;
 }
 

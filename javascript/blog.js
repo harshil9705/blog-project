@@ -16,6 +16,10 @@ document.querySelector("#value").addEventListener("input", (e) =>{
         fill()  
 })
 
+document.querySelector("#news").addEventListener("click",()=>{
+        
+})
+
 
 fetch("http://localhost:3100/blog")
 .then((ser)=>ser.json())

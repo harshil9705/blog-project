@@ -5,7 +5,7 @@ let fill =() =>{
     .then((data)=>{
 
         let filcat = data.filter((ele)=>ele.category.match(value.toLowerCase()))
-                    output(filcat)         
+        output(filcat)         
     })
 }
 
@@ -17,17 +17,15 @@ document.querySelector("#value").addEventListener("input", (e) =>{
 })
 
 let cat = (pera) =>{
-
         let val = document.querySelector("#category").value;
-
+        
         fetch(`http://localhost:3100/blog?category=${pera}`)
         .then((ser)=>ser.json())
         .then((data)=>{
-              
+
                 if (val === pera){
                         output(data);
                 }
-                
         })
 }
 
@@ -41,23 +39,6 @@ document.querySelector("#category").addEventListener("change",()=>cat("tech"))
 document.querySelector("#category").addEventListener("change",()=>cat("photography"))
 
 var category = document.querySelector("#category").value
-
-// console.log(category);
-
-// cat = document.querySelector("#category").value
-// console.log(cat);
-
-// document.querySelector("#category").addEventListener("change",()=>{
-//         fetch(`http://localhost:3100/blog?category=news`)
-//         .then((ser)=>ser.json())
-//         .then((data)=>output(data))
-// })
-
-// document.querySelector("#readmore").addEventListener("click",()=>{
-//         document.querySelector("p").style.overflow="hidden"
-//     })
-
-
 
 fetch("http://localhost:3100/blog")
 .then((ser)=>ser.json())

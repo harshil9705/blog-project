@@ -30,14 +30,11 @@ document.querySelector("#upform").addEventListener("submit",(e)=>{
             window.location.href="index.html"
         }
 
-    
     updata={
         username : document.querySelector("#username").value,
         email : document.querySelector("#email").value,
         password : document.querySelector("#password").value
     }
-    
-    console.log(updata);
 
     fetch(`http://localhost:3100/signup?email=${email}`)
     .then((ele)=>ele.json())

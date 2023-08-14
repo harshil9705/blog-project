@@ -22,14 +22,14 @@ let output = (blog) => {
     })
 }
 
-
-
 // get data
 
-fetch("http://localhost:3100/blog")
-.then((ser)=>ser.json())
-.then((data)=>output(data))
-
+let get = async()=>{
+    fetch("http://localhost:3100/blog")
+    .then((ser)=>ser.json())
+    .then((data)=>output(data))
+}
+get()
 
 document.querySelector("#addblog").addEventListener("submit",(e)=>{
     e.preventDefault()

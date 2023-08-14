@@ -16,31 +16,47 @@ document.querySelector("#value").addEventListener("input", (e) =>{
         fill()  
 })
 
-let match = (pera) =>{
+let cat = (pera) =>{
+
+        let val = document.querySelector("#category").value;
+
         fetch(`http://localhost:3100/blog?category=${pera}`)
         .then((ser)=>ser.json())
-        .then((data)=>output(data))
+        .then((data)=>{
+              
+                if (val === pera){
+                        output(data);
+                }
+                
+        })
 }
 
-// match()
+document.querySelector("#category").addEventListener("change",()=> get())
+document.querySelector("#category").addEventListener("change",()=>cat("sports"))
+document.querySelector("#category").addEventListener("change",()=>cat("ecommerce"))
+document.querySelector("#category").addEventListener("change",()=>cat("news"))
+document.querySelector("#category").addEventListener("change",()=>cat("art"))
+document.querySelector("#category").addEventListener("change",()=>cat("socialmedia"))
+document.querySelector("#category").addEventListener("change",()=>cat("tech"))
+document.querySelector("#category").addEventListener("change",()=>cat("photography"))
 
-document.querySelector("#sports").addEventListener("click",()=>match("sports"))
-document.querySelector("#e-commerce").addEventListener("click",()=>match("e-commerce"))
-document.querySelector("#news").addEventListener("click",()=>match("news"))
-document.querySelector("#art").addEventListener("click",()=>match("art"))
-document.querySelector("#socialmedia").addEventListener("click",()=>match("socialmedia"))
-document.querySelector("#tech").addEventListener("click",()=>match("tech"))
-document.querySelector("#photography").addEventListener("click",()=>match("photography"))
+var category = document.querySelector("#category").value
 
+// console.log(category);
 
-// document.querySelector("#news").addEventListener("click",()=>{
+// cat = document.querySelector("#category").value
+// console.log(cat);
+
+// document.querySelector("#category").addEventListener("change",()=>{
 //         fetch(`http://localhost:3100/blog?category=news`)
 //         .then((ser)=>ser.json())
 //         .then((data)=>output(data))
 // })
+
 // document.querySelector("#readmore").addEventListener("click",()=>{
 //         document.querySelector("p").style.overflow="hidden"
 //     })
+
 
 
 fetch("http://localhost:3100/blog")

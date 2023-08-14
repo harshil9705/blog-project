@@ -1,29 +1,65 @@
 {
   "signup": [
     {
-      "username": "harshil321",
-      "email": "harshil3322@gmail.com",
-      "password": "har@12345678",
+      "username": "bhavinbhai",
+      "email": "ewwe#23232@gmail.com",
+      "password": "hfhfh@dfdjfd232",
       "id": 1
     },
     {
-      "username": "jay987",
-      "email": "jay4545@gmail.com",
-      "password": "jay4040#",
+      "username": "bhavinbhai32332",
+      "email": "harshillakhani009@gmail.com",
+      "password": "dsdssd@3452354",
       "id": 2
+    },
+    {
+      "username": "bhavinbhai232",
+      "email": "harshillakhani009@gmail.com",
+      "password": "sdsdsd@2342332",
+      "id": 3
+    },
+    {
+      "username": "bhavinbhai212",
+      "email": "dlakhani202@gmail.com",
+      "password": "jfjfjjj@32232",
+      "id": 4
+    },
+    {
+      "username": "bhavinbhai212",
+      "email": "dlakhani202@gmail.com",
+      "password": "jfjfjjj@32232",
+      "id": 5
+    },
+    {
+      "username": "bhavinbhai21",
+      "email": "dlakhani202@gmail.com",
+      "password": "wwqw@1112",
+      "id": 6
+    },
+    {
+      "username": "bhavinbhai21",
+      "email": "harshillakhani009@gmail.com",
+      "password": "sdsdsd@2342332",
+      "id": 7
+    },
+    {
+      "username": "ha2343",
+      "email": "jay4545@gmail.com",
+      "password": "sd@21212121ds",
+      "id": 8
     }
   ],
   "blog": [
     {
       "title": "How to start a t-shirt business online",
-      "category": "e-commerce",
+      "category": "ecommerce",
       "img": "https://static.wixstatic.com/media/a77aa0_ac43dfc5fbaa400d93084b43c9f7229a~mv2.jpg/v1/fill/w_626,h_358,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a77aa0_ac43dfc5fbaa400d93084b43c9f7229a~mv2.jpg",
       "description": "There's nothing quite like a good t-shirt. Apart from being easy to throw on, t-shirts have a unique way of expressing our individuality, our humor, and our loyalties. ",
       "id": 1
     },
     {
       "title": "How to Calculate Sales Tax for Your Online Store",
-      "category": "e-commerce",
+      "category": "ecommerce",
       "img": "https://static.wixstatic.com/media/dd7a8b_f9af0a7cb5a54b7d8d19ce6f4ec42aa0~mv2.png/v1/fill/w_364,h_205,fp_0.50_0.50,q_95,enc_auto/dd7a8b_f9af0a7cb5a54b7d8d19ce6f4ec42aa0~mv2.png",
       "description": "Some aspects of your pricing strategy, like wholesale costs, are easier to understand and identify. Other factors, like how to find the sales tax, can be a bit more stressful and complicated, especially for online businesses with a global reach. That’s because when calculating sales tax for your online store, there is rarely a one-size-fits-all-approach. Instead, you have to navigate city, county, state, and country regulations to understand your tax obligations. ",
       "id": 2
@@ -125,6 +161,13 @@
       "img": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/suryakumar-yadav-084134-16x9_1.jpg?VersionId=0qgyb8naxMKO1pPyGn22xuXIUiLJ7G2h&size=690:388",
       "description": "Indian skipper Rohit Sharma has backed Suryakumar Yadav to excel in the ODI format for the national team, even though he has faced challenges in maintaining consistency in this version of the game. Acknowledged as one of the premier T20 batsmen globally, Suryakumar has encountered struggles while adapting to ODI cricket.\n\nIn his 26 ODIs, Suryakumar has managed to accumulate only 511 runs at an average of 24.33, a subpar record that has sparked doubts about his spot in the Indian squad for the upcoming Asia Cup and ODI World Cup.",
       "id": 16
+    },
+    {
+      "title": "First painting of The edward hopper",
+      "category": "art",
+      "img": "https://img.haikudeck.com/mi/3409e56e20a48d5ddccf60e4fad31814.jpeg",
+      "description": "No other artist managed to capture the solitude within the modern city like Edward Hopper. The ‘artist of empty spaces’ offers a remindful look at life of Americans during Great Depression. His suggestive imagery shares the mood of individual’s isolation with books of Tennessee Williams, Theodore Dreiser, Robert Frost, Jerome Salinger, as well as with canvasses of Giorgio De Chirico and Paul Delvaux. Hopper depicted the spirit of the time very subtly, showing it in the poses of characters, in the vast empty spaces around them, and also in his unique color palette.\n\nEdward Hopper was born into a middle class family in Nyack, NY, a vibrant hub of transport and industry at the time. The boy was already serious about his artistic ambitions in the age of 10, when he started to sign and date his drawings. Hopper's parents encouraged him to study commercial illustration instead of fine art. Accordingly, he spent a year at the New York School of Illustration before transferring to the more serious New York School of Art (now Parsons School of Design) to realize his dream. His teachers there included the American Impressionist William Merritt Chase (who founded the school) and Robert Henri, a leading figure of the Ashcan school, whose proponents advocated depicting the grittier side of urban life. Hopper's classmates at the school included George Bellows and Rockwell Kent.",
+      "id": 17
     }
   ]
 }

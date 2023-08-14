@@ -26,9 +26,10 @@ document.querySelector("#upform").addEventListener("submit",(e)=>{
         document.querySelector("#perror").innerHTML="Enter minimum 8 latter "
     }
     
-    if(userval.test(username) && emailval.test(email) && passval.test(password)){
-        window.location.href="index.html"
-    }
+        if(userval.test(username) && emailval.test(email) && passval.test(password)){
+            window.location.href="index.html"
+        }
+
     
     updata={
         username : document.querySelector("#username").value,
@@ -38,6 +39,25 @@ document.querySelector("#upform").addEventListener("submit",(e)=>{
     
     console.log(updata);
 
+    fetch(`http://localhost:3100/signup?email=${email}`)
+    .then((ele)=>ele.json())
+    .then((mix)=>{
+        if(mix.length > 0){
+            for(let i = 0; i < mix.length ; i++){
+                if(mix[i].email == email){
+                    document.querySelector("#ferror").innerHTML="* Email is already registered "
+                    alert("email is already ragistrate")
+                }
+                else{
+                    window.location.href="index.html"
+                }
+            }
+        }
+        else{
+            document.querySelector("#ferror").innerHTML="fill data"
+        }
+    })
+
     fetch("http://localhost:3100/signup",{
         method:"POST",
         headers:{"Content-Type":"application/json"},
@@ -45,10 +65,4 @@ document.querySelector("#upform").addEventListener("submit",(e)=>{
     })
     .then((res) => res.json())
     .then((data) => console.log(data));
-
-    // fetch(`http://localhost:3100/signup?email=${email}`)
-    // .then((ele)=>ele.json())
-    // .then((mix)=>{
-    //     if()
-    // })
 })  

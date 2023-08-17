@@ -24,7 +24,7 @@ document.querySelector("#upform").addEventListener("submit", (e) => {
   }
   if (!passval.test(updata.password)) {
     document.querySelector("#perror").innerHTML = "Enter minimum 8 latter ";
-  }
+  } 
 
   if (
     userval.test(updata.username) &&
